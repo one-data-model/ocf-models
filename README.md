@@ -2,7 +2,20 @@
 
 OCF convered oneDM data models.
 
+The RT value of the OCF model is translated into the filename.
 
-Experimental CI: [![CI](https://github.com/one-data-model/playground/actions/workflows/ci.yml/badge.svg
-)](https://github.com/one-data-model/playground/actions/workflows/ci.yml) — please check the
+- The oic.r prefix is removed
+- The periods "." are replaced with underscores "_"
+
+Examples: 
+
+| resource type  |  sdf file name  |
+|----------------| --------------- |
+| oic.r.batterymaterial | sdfobject-batterymaterial.sdf.json |
+| oic.r.body.water | sdfobject-body_water.sdf.json |
+
+
+
+Validation: [![CI](https://github.com/one-data-model/ocf-models/actions/workflows/ci.yml/badge.svg
+)](https://github.com/one-data-model/ocf-models/actions/workflows/ci.yml) — please check the
 build log linked through this badge for CI messages.
