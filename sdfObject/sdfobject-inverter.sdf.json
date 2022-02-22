@@ -1,0 +1,75 @@
+{
+  "info": {
+    "copyright": "copyright 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Inverter (IEC 61850)",
+    "version": "2019-06-13"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "inverter": {
+      "description": "This Resource describes functions for the control and monitoring of IEC 61850 based circuit breaker.",
+      "sdfProperty": {
+        "status": {
+          "description": "The inverter status. The status can only be reset out of bounds.",
+          "writable": false,
+          "type": "string",
+          "enum": [
+            "on",
+            "off",
+            "trip"
+          ]
+        },
+        "ratedpower": {
+          "description": "The rated power in kW, defined at manufacturing time.",
+          "writable": false,
+          "type": "number"
+        },
+        "minvoltmppt": {
+          "description": "Minimum voltage for MPPT (Maximum power point tracking) control method (V), defined at manufacturing time.",
+          "writable": false,
+          "type": "number"
+        },
+        "maxvoltmppt": {
+          "description": "Maximum voltage for MPPT (Maximum power point tracking) control method (V), defined at manufacturing time.",
+          "writable": false,
+          "type": "number"
+        },
+        "inputvoltage": {
+          "description": "input voltage in Volts.",
+          "writable": false,
+          "type": "number"
+        },
+        "inputcurrent": {
+          "description": "input current in Amperes.",
+          "writable": false,
+          "type": "number"
+        },
+        "outputpower": {
+          "description": "output power in kW.",
+          "writable": false,
+          "type": "number"
+        },
+        "timestamp": {
+          "description": "An RFC3339 formatted time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00). Resolution in 1/100 second.",
+          "format": "date-time",
+          "writable": false,
+          "type": "string"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/inverter/sdfProperty/status",
+        "#/sdfObject/inverter/sdfProperty/ratedpower",
+        "#/sdfObject/inverter/sdfProperty/minvoltmppt",
+        "#/sdfObject/inverter/sdfProperty/maxvoltmppt",
+        "#/sdfObject/inverter/sdfProperty/inputvoltage",
+        "#/sdfObject/inverter/sdfProperty/inputcurrent",
+        "#/sdfObject/inverter/sdfProperty/outputpower",
+        "#/sdfObject/inverter/sdfProperty/timestamp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "info": {
+    "copyright": "Copyright 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Device Settings Broadcasting Resource Type",
+    "version": "2020-07-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "settings.broadcasting": {
+      "description": "Gets current device broadcasting settings.",
+      "sdfProperty": {
+        "antenna": {
+          "description": "Type of antenna. Client can change antenna using supported-antennas property.",
+          "type": "string"
+        },
+        "supported-antennas": {
+          "description": "The array of possible antennas the device supports. This property should be added if antenna is supported.",
+          "items": {
+            "type": "string"
+          },
+          "writable": false,
+          "minItems": 1,
+          "type": "array"
+        },
+        "location-info": {
+          "description": "Location information of the broadcast system.",
+          "type": "string"
+        },
+        "carrier-info": {
+          "description": "Carrier information of the broadcast system.",
+          "type": "string"
+        },
+        "auto-program": {
+          "description": "Scan for channels using Auto Program.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

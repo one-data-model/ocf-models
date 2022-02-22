@@ -1,0 +1,37 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Vehicle Connector",
+    "version": "2019-02-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "vehicle.connector": {
+      "description": "This Resource describes the attributes associated with an electric vehicle charging connector. The Property \"connected\" is a boolean indicating the status of the connector (False = disconnected, True = connected). The Property \"ratedchargingcapacity\" and \"rateddischargingcapacity\" are in Amps (A).",
+      "sdfProperty": {
+        "connected": {
+          "description": "The connection state.",
+          "writable": false,
+          "type": "boolean"
+        },
+        "ratedchargingcapacity": {
+          "description": "The rated charging capacity in Amps (A).",
+          "writable": false,
+          "type": "number"
+        },
+        "rateddischargingcapacity": {
+          "description": "The rated discharging capacity in Amps (A).",
+          "writable": false,
+          "type": "number"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/vehicle.connector/sdfProperty/connected"
+      ]
+    }
+  }
+}

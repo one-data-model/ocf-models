@@ -1,0 +1,24 @@
+{
+  "info": {
+    "copyright": "Copyright 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Device Settings System Resource Type",
+    "version": "2020-07-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "settings.system": {
+      "description": "Gets current device system settings.",
+      "sdfProperty": {
+        "language": {
+          "description": "Current language of the device settings with format pattern according to RFC 5646 language tag",
+          "type": "string",
+          "pattern": "^[A-Za-z]{1,8}(-[A-Za-z0-9]{1,8})*$"
+        }
+      }
+    }
+  }
+}

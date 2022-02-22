@@ -1,0 +1,83 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Threshold for Continuous Glucose Meter (CGM)",
+    "version": "2019-03-04"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "cgm.threshold": {
+      "description": "This Resource describes the Properties associated with Threshold for Continuous Glucose Meter (CGM).",
+      "sdfProperty": {
+        "plow": {
+          "description": "This Property describes the Patient low threshold (mg/dL)",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": true
+        },
+        "phigh": {
+          "description": "This Property describes the Patient high threshold (mg/dL)",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": true
+        },
+        "dhypo": {
+          "description": "This Property describes the Device hypoglycemia threshold (mg/dL)",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": true
+        },
+        "dhyper": {
+          "description": "This Property describes the Device hyperglycemia threshold (mg/dL)",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": true
+        },
+        "gir": {
+          "description": "This Property describes the Glucose Increase rate of change threshold (%)",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": true
+        },
+        "gdr": {
+          "description": "This Property describes the Glucose Decrease rate of change threshold (%)",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": true
+        },
+        "range": {
+          "type": "array",
+          "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+          "writable": false,
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "step": {
+          "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+          "writable": false,
+          "type": "number"
+        },
+        "precision": {
+          "type": "number",
+          "writable": false,
+          "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/cgm.threshold/sdfProperty/plow",
+        "#/sdfObject/cgm.threshold/sdfProperty/phigh",
+        "#/sdfObject/cgm.threshold/sdfProperty/dhypo",
+        "#/sdfObject/cgm.threshold/sdfProperty/dhyper",
+        "#/sdfObject/cgm.threshold/sdfProperty/gir",
+        "#/sdfObject/cgm.threshold/sdfProperty/gdr"
+      ]
+    }
+  }
+}

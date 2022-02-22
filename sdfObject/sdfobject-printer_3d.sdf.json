@@ -1,0 +1,68 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "3D Printer",
+    "version": "2019-02-22"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "printer.3d": {
+      "description": "This Resource describes the attributes associated with 3D Printer. The type of 3D printing technology is specified by an enumerated string value. The maximum sizes in mm are included for the x, y, and z dimensions. A designation of whether the device is capable of WAN connectivity is represented in a boolean. The memory capacity is captured in MB.",
+      "sdfProperty": {
+        "printsizey": {
+          "description": "This Property represents the maximum size of printing object in the direction of Y-axis. The unit is mm.",
+          "writable": false,
+          "type": "number"
+        },
+        "memorysize": {
+          "description": "This Property represents the total memory size of the printer. The unit is MB(Mega Bytes)",
+          "writable": false,
+          "type": "number"
+        },
+        "3dprinttype": {
+          "description": "The type of 3D printing technology.",
+          "enum": [
+            "Fused Filament Fabrication",
+            "Fused Deposition Modeling",
+            "Digital Light Processing",
+            "Powder Bed & inkjet head 3D Printing",
+            "Photopolymer Jetting Technology",
+            "Laminated Object Manufacturing",
+            "Stereolithography Apparatus",
+            "Selective Laser Sintering",
+            "Unknown"
+          ],
+          "writable": false,
+          "type": "string"
+        },
+        "wanconnected": {
+          "description": "This Property indicates the connectivity capability of the 3D printer. If the value is false, the printer does not have network facility to Wide Area Network such as internet and GSM. If the value is true, the printer has network connectivity",
+          "writable": false,
+          "type": "boolean"
+        },
+        "printsizex": {
+          "description": "This Property represents the maximum size of printing object in the direction of X-axis. The unit is mm.",
+          "writable": false,
+          "type": "number"
+        },
+        "printsizez": {
+          "description": "This Property represents the maximum size of printing object in the direction of Z-axis. The unit is mm.",
+          "writable": false,
+          "type": "number"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/printer.3d/sdfProperty/3dprinttype",
+        "#/sdfObject/printer.3d/sdfProperty/printsizex",
+        "#/sdfObject/printer.3d/sdfProperty/printsizey",
+        "#/sdfObject/printer.3d/sdfProperty/printsizez",
+        "#/sdfObject/printer.3d/sdfProperty/wanconnected",
+        "#/sdfObject/printer.3d/sdfProperty/memorysize"
+      ]
+    }
+  }
+}

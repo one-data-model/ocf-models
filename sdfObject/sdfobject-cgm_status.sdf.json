@@ -1,0 +1,76 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Status for Continuous Glucose Meter (CGM)",
+    "version": "2019-03-04"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "cgm.status": {
+      "description": "This Resource describes the Properties associated with Status for Continuous Glucose Meter (CGM).",
+      "sdfProperty": {
+        "cgmtype": {
+          "description": "This Property describes the CGM measurement type.",
+          "type": "string",
+          "enum": [
+            "Capillary Whole blood",
+            "Capillary Plasma",
+            "Venous Plasma",
+            "Arterial Whole blood",
+            "Arterial Plasma",
+            "Undetermined Whole blood",
+            "Undetermined Plasma",
+            "Interstitial Fluid"
+          ],
+          "writable": false
+        },
+        "cgmstatus": {
+          "description": "This Property describes the specific notifications given by the CGM device including, but not limited to, warnings, errors, and handling events.",
+          "type": "string",
+          "writable": false
+        },
+        "gtrend": {
+          "description": "This Property describes the rate of change in glucose measurements at a time instant.",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": false
+        },
+        "malfunction": {
+          "description": "This Property describes the sensor malfunction detection check.",
+          "type": "boolean",
+          "writable": false
+        },
+        "range": {
+          "type": "array",
+          "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+          "writable": false,
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "step": {
+          "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+          "writable": false,
+          "type": "number"
+        },
+        "precision": {
+          "type": "number",
+          "writable": false,
+          "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/cgm.status/sdfProperty/cgmtype",
+        "#/sdfObject/cgm.status/sdfProperty/cgmstatus",
+        "#/sdfObject/cgm.status/sdfProperty/gtrend",
+        "#/sdfObject/cgm.status/sdfProperty/malfunction"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "info": {
+    "copyright": "copyright 2021 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Vendor List",
+    "version": "2021-05-20"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "vendorlist": {
+      "description": "This Resource describes the current vendor and supported vendors for an OCF Device (e. g. the set of possible A/C vendors to which an A/C Assistant can connect). The current vendor can be read or set, setting indicates a desired vendor. A device may reject an attempt to set a vendor that is not found in supported vendors. The Property \"supportedVendors\" is an array of the possible vendor names. The value of \"supportedVendors\" is Device specific. The Property \"currentVendor\" is one vendor selected from \"supportedVendors\". The Property \"status\" is current operation status when the \"currentVendor\" is set.",
+      "sdfProperty": {
+        "currentVendor": {
+          "description": "The current vendor selected from \"supportedVendors\".",
+          "type": "string"
+        },
+        "supportedVendors": {
+          "description": "The array of the possible vendors.",
+          "items": {
+            "type": "string"
+          },
+          "writable": false,
+          "type": "array"
+        },
+        "status": {
+          "description": "The current operation status. Only when the \"status\" is \"processing\", it is writable and it only can be set to \"failed\" or \"vendorset\". The device should reject an attempt to set the \"status\" to values other than \"failed\" and \"vendorset\".And the device should reject any attempt to update the \"status\" when the \"status\" is not \"processing\".",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

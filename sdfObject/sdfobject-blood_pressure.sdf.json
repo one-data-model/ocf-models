@@ -1,0 +1,71 @@
+{
+  "info": {
+    "copyright": "Copyright 2016-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Blood Pressure",
+    "version": "2019-03-22"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "blood.pressure": {
+      "description": "This Resource describes the Properties associated with a person's blood pressure. The unit is a single value that is one of mmHg or kPa. If the unit Property is missing the default is a millimeter of mercury [mmHg]. The bloodpressure and unit Properties are read-only values that are provided by the Server. When range is omitted the default is 0 to +MAXFLOAT.",
+      "sdfProperty": {
+        "map": {
+          "description": "Mean arterial pressure (MAP)",
+          "minimum": 0.0,
+          "writable": false,
+          "type": "number"
+        },
+        "units": {
+          "description": "Blood pressure unit",
+          "enum": [
+            "mmHg",
+            "kPa"
+          ],
+          "writable": false,
+          "type": "string",
+          "default": "mmHg"
+        },
+        "systolic": {
+          "description": "Systolic blood pressure",
+          "minimum": 0.0,
+          "writable": false,
+          "type": "number"
+        },
+        "diastolic": {
+          "description": "Diastolic blood pressure",
+          "minimum": 0.0,
+          "writable": false,
+          "type": "number"
+        },
+        "range": {
+          "type": "array",
+          "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+          "writable": false,
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "step": {
+          "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+          "writable": false,
+          "type": "number"
+        },
+        "precision": {
+          "type": "number",
+          "writable": false,
+          "description": "When exposed the value in 'precision' provides a +/- tolerance against the Properties in the Resource. Thus if a Property is UPDATED to a value and that Property then RETRIEVED, the RETRIEVED value is valid if in the range of the set value +/- precision"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/blood.pressure/sdfProperty/systolic",
+        "#/sdfObject/blood.pressure/sdfProperty/diastolic"
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "info": {
+    "copyright": "copyright 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Colour Rendering Index",
+    "version": "2020-10-16"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "colour.renderingindex": {
+      "description": "This Resource describes a Colour Rendering Index (CRI). The Property \"cri\" is an number. A colour rendering index (CRI) is a quantitative measure of the ability of a light source to reveal the colours of various objects faithfully in comparison with an ideal or natural light source. Light sources with a high CRI are desirable in colour-critical applications such as neonatal care and art restoration. It is defined by the International Commission on Illumination (CIE) as follows:[1] Colour rendering: Effect of an illuminant on the colour appearance of objects by conscious or subconscious comparison with their colour appearance under a reference illuminant. The value often quoted as 'CRI' on commercially available lighting products is properly called the CIE Ra value, 'CRI' being a general term and CIE Ra being the international standard colour rendering index",
+      "sdfProperty": {
+        "cri": {
+          "description": "The colour rendering index.",
+          "maximum": 100,
+          "type": "number",
+          "writable": false
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/colour.renderingindex/sdfProperty/cri"
+      ]
+    }
+  }
+}

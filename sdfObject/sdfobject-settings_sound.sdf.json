@@ -1,0 +1,53 @@
+{
+  "info": {
+    "copyright": "Copyright 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Device Settings Sound Resource Type",
+    "version": "2020-07-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "settings.sound": {
+      "description": "Gets current device sound settings.",
+      "sdfProperty": {
+        "speaker": {
+          "description": "Device Settings Sound - Speaker. Client can change speaker using supported-speakers property.",
+          "type": "string"
+        },
+        "supported-speakers": {
+          "description": "The array of possible speakers the device supports. This property should be added if speaker is supported.",
+          "items": {
+            "type": "string"
+          },
+          "writable": false,
+          "minItems": 1,
+          "type": "array"
+        },
+        "sound-mode": {
+          "description": "Device Settings Sound - Sound Mode. Client can change sound-mode using supported-sound-modes property.",
+          "type": "string"
+        },
+        "supported-sound-modes": {
+          "description": "The array of possible sound modes the device supports. This property should be added if sound-mode is supported.",
+          "items": {
+            "type": "string"
+          },
+          "writable": false,
+          "minItems": 1,
+          "type": "array"
+        },
+        "auto-volume": {
+          "description": "Automatically equalizes the volume level when switching to antother channel.",
+          "type": "boolean"
+        },
+        "dolby-atmos-compatibility": {
+          "description": "Recent devices support dolby-atmos mode.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

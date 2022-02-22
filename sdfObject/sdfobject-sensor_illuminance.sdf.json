@@ -1,0 +1,37 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Illuminance Sensor",
+    "version": "2019-08-08"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "sensor.illuminance": {
+      "description": "This Resource describes an illuminance sensor. The Property \"illuminance\" is a float and represents the sensed luminous flux per unit area in lux.",
+      "sdfProperty": {
+        "illuminance": {
+          "description": "The sensed luminous flux per unit area in lux.",
+          "writable": false,
+          "type": "number"
+        },
+        "range": {
+          "type": "array",
+          "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+          "writable": false,
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/sensor.illuminance/sdfProperty/illuminance"
+      ]
+    }
+  }
+}
