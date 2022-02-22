@@ -1,0 +1,27 @@
+{
+  "info": {
+    "copyright": "Copyright 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Device Settings Support Resource Type",
+    "version": "2020-07-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "settings.support": {
+      "description": "Gets current device support settings.",
+      "sdfProperty": {
+        "remote-management": {
+          "description": "Allows support remote access so support can control user setting and troubleshoot problem.",
+          "type": "boolean"
+        },
+        "software-auto-update": {
+          "description": "Software - Auto Update.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

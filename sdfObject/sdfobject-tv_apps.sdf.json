@@ -1,0 +1,45 @@
+{
+  "info": {
+    "copyright": "copyright 2021 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "TV Apps",
+    "version": "2021-03-02"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "tv.apps": {
+      "description": "This Resource describes an app launch function, which can show an app list and the launched app. The Property \"applist\" is a list of applications already installed. The Property \"app\" is the name of the application which the user wants to launch. The property \"status\" is current operation status of application or set operation. running : App is running or launch app, stopped : App is stopped or stop app. When an app is launched any currently running app is automatically stopped.",
+      "sdfProperty": {
+        "applist": {
+          "description": "The list of the applications already installed. The list shall include \"none\" as meaning no app launched",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "writable": false,
+          "type": "array"
+        },
+        "app": {
+          "description": "The name of application which the user wants to control.",
+          "type": "string"
+        },
+        "status": {
+          "description": "Desired operational status of the application. running : App is running, stopped : App is stopped.",
+          "enum": [
+            "running",
+            "stopped"
+          ],
+          "type": "string"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/tv.apps/sdfProperty/app",
+        "#/sdfObject/tv.apps/sdfProperty/status"
+      ]
+    }
+  }
+}

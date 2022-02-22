@@ -1,0 +1,59 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Colour Chroma",
+    "version": "2019-02-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "colour.chroma": {
+      "description": "This Resource describes the colour using chroma conventions. Properties are \"hue\", \"saturation\", \"csc\", and \"ct\". The Property \"hue\" is the hue angle, it is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]). The Property \"saturation\" is an integer value as defined by the CIECAM02 model definition (see reference [CIE CIE159:2004]). The Property \"maximumsaturation\" is the upper bound on the saturation supported by the Device. If not present the maximum value for \"saturation\" is 32767. The Property \"csc\" is the colour space coordinates in CIE colour space. The first item in the array is the X coordinate. The second item in the array is the Y coordinate. The Property \"nct\" is the Mired colour temperature. The Resource provides the colour using chroma conventions.",
+      "sdfProperty": {
+        "ct": {
+          "description": "The Mired colour temperature.",
+          "minimum": 0,
+          "type": "integer"
+        },
+        "hue": {
+          "description": "The hue angle as defined by the CIECAM02 model definition.",
+          "maximum": 360.0,
+          "minimum": 0.0,
+          "type": "number"
+        },
+        "saturation": {
+          "description": "The saturation as defined by the CIECAM02 model definition.",
+          "maximum": 32767,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "maximumsaturation": {
+          "description": "The maximum supported value of \"saturation\" for this Device.",
+          "maximum": 32767,
+          "minimum": 0,
+          "writable": false,
+          "type": "integer"
+        },
+        "csc": {
+          "description": "The X and Y coordinates of the colour in CIE colour space",
+          "items": {
+            "maximum": 1,
+            "minimum": 0,
+            "type": "number"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/colour.chroma/sdfProperty/hue",
+        "#/sdfObject/colour.chroma/sdfProperty/saturation",
+        "#/sdfObject/colour.chroma/sdfProperty/csc"
+      ]
+    }
+  }
+}

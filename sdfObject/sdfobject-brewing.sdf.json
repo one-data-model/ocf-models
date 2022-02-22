@@ -1,0 +1,39 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Brewing",
+    "version": "2019-02-22"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "brewing": {
+      "description": "This Resource describes the attributes associated with brewing. This resource is used for configuration only. The Operation of the Device is handled independently of this Resource. The amount requested is in ml. The strength of a brewed drink is an integer, the range of which may be enforced by the presence of a strengthrange Property.",
+      "sdfProperty": {
+        "strength": {
+          "description": "The strength of a brewed drink.",
+          "type": "integer"
+        },
+        "amountrequested": {
+          "description": "The amount requested in ml.",
+          "type": "integer"
+        },
+        "strengthrange": {
+          "items": {
+            "type": "integer"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "writable": false,
+          "type": "array"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/brewing/sdfProperty/amountrequested"
+      ]
+    }
+  }
+}

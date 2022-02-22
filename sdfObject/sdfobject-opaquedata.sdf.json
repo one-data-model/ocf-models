@@ -1,0 +1,48 @@
+{
+  "info": {
+    "copyright": "copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Opaque Data",
+    "version": "2018-12-12"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "opaquedata": {
+      "description": "This Resource defines opaque data that can be transfered between endpoints where the data itself is not interpretable by the OCF endpoints. The stringdata is a string of ASCII characters.",
+      "sdfProperty": {
+        "payload": {
+          "type": "string",
+          "description": "This Property contains the opaque data."
+        },
+        "encoding": {
+          "type": "string",
+          "description": "This Property describes the encoding of the payload, e.g. binary as base64, json, xml, utf-8."
+        },
+        "payloadtype": {
+          "type": "string",
+          "description": "This Property describes the identification of the payload, e.g. what the payload is representing ."
+        },
+        "size": {
+          "type": "integer",
+          "description": "The size in bytes of the decoded binary object."
+        },
+        "hash": {
+          "type": "string",
+          "description": "The hash code of the blob. If present, it is used to check the decoded content of the object data point for integrity. The algorithm used for generating the hash value is SHA-2 [15]. The data point contains the hash as a hex encoded value."
+        },
+        "system": {
+          "type": "string",
+          "description": "The eco system that is using the payload."
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/opaquedata/sdfProperty/payload",
+        "#/sdfObject/opaquedata/sdfProperty/encoding",
+        "#/sdfObject/opaquedata/sdfProperty/system"
+      ]
+    }
+  }
+}

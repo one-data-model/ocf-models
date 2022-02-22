@@ -1,0 +1,52 @@
+{
+  "info": {
+    "copyright": "Copyright 2020 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Device Settings Accessibility Resource Type",
+    "version": "2020-07-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "settings.accessibility": {
+      "description": "Gets current device accessibility settings.",
+      "sdfProperty": {
+        "voice-guide": {
+          "description": "Turns on or off voice guide.",
+          "type": "boolean"
+        },
+        "video-description": {
+          "description": "Turns on or off video description.",
+          "type": "boolean"
+        },
+        "caption": {
+          "description": "Turns on or off accessibility caption.",
+          "type": "boolean"
+        },
+        "caption-mode": {
+          "description": "Accessibility Caption Mode. Client can change caption-mode using supported-caption-modes property.",
+          "type": "string"
+        },
+        "supported-caption-modes": {
+          "description": "The array of possible caption modes the device supports. This property should be added if caption-mode is supported.",
+          "items": {
+            "type": "string"
+          },
+          "writable": false,
+          "minItems": 1,
+          "type": "array"
+        },
+        "high-contrast": {
+          "description": "Turns on or off high contrast.",
+          "type": "boolean"
+        },
+        "enlarge": {
+          "description": "Turns on or off print enlargement.",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

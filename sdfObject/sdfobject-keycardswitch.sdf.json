@@ -1,0 +1,31 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "KeyCard Switch",
+    "version": "2019-08-07"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "keycardswitch": {
+      "description": "This Resource describes the operation of a KeyCard style switch. It has one mandatory Property,\"stateofcard\", which is a string enum type. It has two enum values: \"validCardInserted\", \"validCardNotInserted\". \"validCardInserted\" means that a keycard was inserted and passed validation check. \"validCardNotInserted\" means that a keycard is not inserted or it was inserted but failed to pass validation check.",
+      "sdfProperty": {
+        "stateofcard": {
+          "description": "The status of the keycardswitch. \"validCardInserted\" means that a keycard was inserted and passed validation check. \"validCardNotInserted\" means that a keycard is not inserted or it was inserted but failed to pass validation check.",
+          "writable": false,
+          "type": "string",
+          "enum": [
+            "validCardInserted",
+            "validCardNotInserted"
+          ]
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/keycardswitch/sdfProperty/stateofcard"
+      ]
+    }
+  }
+}

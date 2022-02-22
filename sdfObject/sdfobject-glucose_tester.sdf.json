@@ -1,0 +1,32 @@
+{
+  "info": {
+    "copyright": "Copyright 2016-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Context Tester for Glucose Meter",
+    "version": "2019-03-22"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "glucose.tester": {
+      "description": "This Resource describes the Properties associated with context tester. The tester Property is a read-only value that is provided by the Server where especially hcp stands for HealthCare Professional.",
+      "sdfProperty": {
+        "tester": {
+          "description": "The possible cases of testers who may perform the blood sugar measurement.",
+          "enum": [
+            "self",
+            "hcp",
+            "lab"
+          ],
+          "writable": false,
+          "type": "string"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/glucose.tester/sdfProperty/tester"
+      ]
+    }
+  }
+}

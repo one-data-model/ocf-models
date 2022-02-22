@@ -1,0 +1,28 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Time Stamp",
+    "version": "2019-03-27"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "time.stamp": {
+      "description": "This Resource describes Properties associated with a timestamp. The \"timestamp\" Property is a string that captures a timestamp using the RFC3339 datetime format (e. g: 2007-04-05T14:30Z) (Time+Date+Timezone).",
+      "sdfProperty": {
+        "timestamp": {
+          "description": "An RFC3339 formated time indicating when the data was observed (e.g.: 2016-02-15T09:19Z, 1996-12-19T16:39:57-08:00).",
+          "format": "date-time",
+          "writable": false,
+          "type": "string"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/time.stamp/sdfProperty/timestamp"
+      ]
+    }
+  }
+}

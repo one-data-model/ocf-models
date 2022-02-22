@@ -1,0 +1,26 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Auto White Balance",
+    "version": "2019-02-22"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "colour.autowhitebalance": {
+      "description": "This Resource describes an auto balance on/off feature. The Property \"autoWhiteBalance\" is a boolean. An AutoWhiteBalance value of 'true' means that the auto white balance feature is on. An AutoWhiteBalance value of 'false' means that the auto white balance feature is off.",
+      "sdfProperty": {
+        "autoWhiteBalance": {
+          "description": "The status of the Auto White balance feature.",
+          "type": "boolean"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/colour.autowhitebalance/sdfProperty/autoWhiteBalance"
+      ]
+    }
+  }
+}

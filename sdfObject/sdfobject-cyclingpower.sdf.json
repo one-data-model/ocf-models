@@ -1,0 +1,55 @@
+{
+  "info": {
+    "copyright": "Copyright 2018-2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Cycling Power",
+    "version": "2019-06-11"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "cyclingpower": {
+      "description": "This Resource describes the cycling power, which is the amount of energy transferred or converted per unit time. The unit, which is the default SI unit, is W (which is equal to one joule per second). The power Property is a read-only value that is provided by the server. When range (from \"oic. r. baseresource\") is omitted the default is 0 to +MAXFLOAT.",
+      "sdfProperty": {
+        "power": {
+          "description": "This Resource describes the power, which is the amount of energy transferred or converted per unit time, in W (which is equal to one joule per second).",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": false
+        },
+        "power-left": {
+          "description": "This Resource describes the power, which is the amount of energy transferred or converted per unit time, in W (which is equal to one joule per second).",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": false
+        },
+        "power-right": {
+          "description": "This Resource describes the power, which is the amount of energy transferred or converted per unit time, in W (which is equal to one joule per second).",
+          "type": "number",
+          "minimum": 0.0,
+          "writable": false
+        },
+        "range": {
+          "type": "array",
+          "description": "The valid range for the Property in the Resource as a number. The first value in the array is the minimum value, the second value in the array is the maximum value.",
+          "writable": false,
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        "step": {
+          "description": "Step value across the defined range an integer when the range is a number.  This is the increment for valid values across the range; so if range is 0.0..10.0 and step is 2.5 then valid values are 0.0,2.5,5.0,7.5,10.0.",
+          "writable": false,
+          "type": "number"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/cyclingpower/sdfProperty/power"
+      ]
+    }
+  }
+}

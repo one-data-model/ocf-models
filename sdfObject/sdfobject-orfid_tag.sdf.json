@@ -1,0 +1,33 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "BSD-3-Clause",
+    "title": "Optical RFID Tag",
+    "version": "2019-02-15"
+  },
+  "namespace": {
+    "ocf": "https://onedm.org/ecosystem/ocf"
+  },
+  "defaultNamespace": "ocf",
+  "sdfObject": {
+    "orfid.tag": {
+      "description": "The Property \"tagid\" is an integer showing the currently read optical augmented RFID tag's identity information.",
+      "sdfProperty": {
+        "tagid": {
+          "description": "The tag read by the RFID reader.",
+          "writable": false,
+          "type": "integer"
+        },
+        "reading": {
+          "description": "The reading indication. true: the tagid is read e.g. being valid. false: the tagid is invalid.",
+          "writable": false,
+          "type": "boolean"
+        }
+      },
+      "sdfRequired": [
+        "#/sdfObject/orfid.tag/sdfProperty/tagid",
+        "#/sdfObject/orfid.tag/sdfProperty/reading"
+      ]
+    }
+  }
+}
