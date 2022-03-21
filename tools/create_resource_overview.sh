@@ -28,8 +28,4 @@
 #  this is the overview of resource types and their description that can be generated from sdf files in github repos.
 
 
-python3 resource_overview.py --outputfile ./sdf.resourcemap-content.json --indir ../sdfObject -url_prefix http://onedm.org/ocf-models/
-
-rm -rf IoTDataModels
-rm -rf core
-rm -rf core-extensions
+python3 resource_overview.py --outputfile ./sdf.resourcemap-content.json --indir ../sdfObject -url_prefix http://onedm.org/ocf-models/sdfObject
