@@ -1,0 +1,938 @@
+[
+  {
+    "filename": "sdfobject-activity.sdf.json",
+    "sdfObject": "activity",
+    "title": "Activity",
+    "url": "http://onedm.org/ocf-models/sdfobject-activity.sdf.json"
+  },
+  {
+    "filename": "sdfobject-airflow.sdf.json",
+    "sdfObject": "airflow",
+    "title": "Air Flow",
+    "url": "http://onedm.org/ocf-models/sdfobject-airflow.sdf.json"
+  },
+  {
+    "filename": "sdfobject-airquality.sdf.json",
+    "sdfObject": "airquality",
+    "title": "Air Quality",
+    "url": "http://onedm.org/ocf-models/sdfobject-airquality.sdf.json"
+  },
+  {
+    "filename": "sdfobject-alarm.sdf.json",
+    "sdfObject": "alarm",
+    "title": "Alarm",
+    "url": "http://onedm.org/ocf-models/sdfobject-alarm.sdf.json"
+  },
+  {
+    "filename": "sdfobject-altimeter.sdf.json",
+    "sdfObject": "altimeter",
+    "title": "Altimeter",
+    "url": "http://onedm.org/ocf-models/sdfobject-altimeter.sdf.json"
+  },
+  {
+    "filename": "sdfobject-audio.sdf.json",
+    "sdfObject": "audio",
+    "title": "Audio Controls",
+    "url": "http://onedm.org/ocf-models/sdfobject-audio.sdf.json"
+  },
+  {
+    "filename": "sdfobject-autofocus.sdf.json",
+    "sdfObject": "autofocus",
+    "title": "Auto Focus",
+    "url": "http://onedm.org/ocf-models/sdfobject-autofocus.sdf.json"
+  },
+  {
+    "filename": "sdfobject-automaticdocumentfeeder.sdf.json",
+    "sdfObject": "automaticdocumentfeeder",
+    "title": "Automatic Document Feeder",
+    "url": "http://onedm.org/ocf-models/sdfobject-automaticdocumentfeeder.sdf.json"
+  },
+  {
+    "filename": "sdfobject-batterymaterial.sdf.json",
+    "sdfObject": "batterymaterial",
+    "title": "Battery Material",
+    "url": "http://onedm.org/ocf-models/sdfobject-batterymaterial.sdf.json"
+  },
+  {
+    "filename": "sdfobject-blood_pressure.sdf.json",
+    "sdfObject": "blood.pressure",
+    "title": "Blood Pressure",
+    "url": "http://onedm.org/ocf-models/sdfobject-blood_pressure.sdf.json"
+  },
+  {
+    "filename": "sdfobject-bmi.sdf.json",
+    "sdfObject": "bmi",
+    "title": "Body Mass Index(BMI)",
+    "url": "http://onedm.org/ocf-models/sdfobject-bmi.sdf.json"
+  },
+  {
+    "filename": "sdfobject-body_fat.sdf.json",
+    "sdfObject": "body.fat",
+    "title": "Body Fat",
+    "url": "http://onedm.org/ocf-models/sdfobject-body_fat.sdf.json"
+  },
+  {
+    "filename": "sdfobject-body_ffm.sdf.json",
+    "sdfObject": "body.ffm",
+    "title": "Body Fat Free Mass",
+    "url": "http://onedm.org/ocf-models/sdfobject-body_ffm.sdf.json"
+  },
+  {
+    "filename": "sdfobject-body_location_temperature.sdf.json",
+    "sdfObject": "body.location.temperature",
+    "title": "Body Location Temperature",
+    "url": "http://onedm.org/ocf-models/sdfobject-body_location_temperature.sdf.json"
+  },
+  {
+    "filename": "sdfobject-body_slm.sdf.json",
+    "sdfObject": "body.slm",
+    "title": "Body Soft Lean Mass",
+    "url": "http://onedm.org/ocf-models/sdfobject-body_slm.sdf.json"
+  },
+  {
+    "filename": "sdfobject-body_water.sdf.json",
+    "sdfObject": "body.water",
+    "title": "Body Water",
+    "url": "http://onedm.org/ocf-models/sdfobject-body_water.sdf.json"
+  },
+  {
+    "filename": "sdfobject-brewing.sdf.json",
+    "sdfObject": "brewing",
+    "title": "Brewing",
+    "url": "http://onedm.org/ocf-models/sdfobject-brewing.sdf.json"
+  },
+  {
+    "filename": "sdfobject-button.sdf.json",
+    "sdfObject": "button",
+    "title": "Button Switch",
+    "url": "http://onedm.org/ocf-models/sdfobject-button.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cadence.sdf.json",
+    "sdfObject": "cadence",
+    "title": "Cadence",
+    "url": "http://onedm.org/ocf-models/sdfobject-cadence.sdf.json"
+  },
+  {
+    "filename": "sdfobject-calorificvalue.sdf.json",
+    "sdfObject": "calorificvalue",
+    "title": "Calorific Value",
+    "url": "http://onedm.org/ocf-models/sdfobject-calorificvalue.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cgm_calibrate.sdf.json",
+    "sdfObject": "cgm.calibrate",
+    "title": "Calibrate for Continuous Glucose Meter (CGM)",
+    "url": "http://onedm.org/ocf-models/sdfobject-cgm_calibrate.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cgm_samplinginterval.sdf.json",
+    "sdfObject": "cgm.samplinginterval",
+    "title": "Sampling Interval for Continuous Glucose Meter (CGM)",
+    "url": "http://onedm.org/ocf-models/sdfobject-cgm_samplinginterval.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cgm_sensor.sdf.json",
+    "sdfObject": "cgm.sensor",
+    "title": "Sensor for Continuous Glucose Meter (CGM)",
+    "url": "http://onedm.org/ocf-models/sdfobject-cgm_sensor.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cgm_status.sdf.json",
+    "sdfObject": "cgm.status",
+    "title": "Status for Continuous Glucose Meter (CGM)",
+    "url": "http://onedm.org/ocf-models/sdfobject-cgm_status.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cgm_threshold.sdf.json",
+    "sdfObject": "cgm.threshold",
+    "title": "Threshold for Continuous Glucose Meter (CGM)",
+    "url": "http://onedm.org/ocf-models/sdfobject-cgm_threshold.sdf.json"
+  },
+  {
+    "filename": "sdfobject-circuitbreaker.sdf.json",
+    "sdfObject": "circuitbreaker",
+    "title": "Circuit Breaker (IEC 61850)",
+    "url": "http://onedm.org/ocf-models/sdfobject-circuitbreaker.sdf.json"
+  },
+  {
+    "filename": "sdfobject-clock.sdf.json",
+    "sdfObject": "clock",
+    "title": "Clock",
+    "url": "http://onedm.org/ocf-models/sdfobject-clock.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_autowhitebalance.sdf.json",
+    "sdfObject": "colour.autowhitebalance",
+    "title": "Auto White Balance",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_autowhitebalance.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_chroma.sdf.json",
+    "sdfObject": "colour.chroma",
+    "title": "Colour Chroma",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_chroma.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_colourtemperature.sdf.json",
+    "sdfObject": "colour.colourtemperature",
+    "title": "Colour Temperature",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_colourtemperature.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_csc.sdf.json",
+    "sdfObject": "colour.csc",
+    "title": "Colour Space Coordinates",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_csc.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_hs.sdf.json",
+    "sdfObject": "colour.hs",
+    "title": "Colour Hue and Saturation",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_hs.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_renderingindex.sdf.json",
+    "sdfObject": "colour.renderingindex",
+    "title": "Colour Rendering Index",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_renderingindex.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_rgb.sdf.json",
+    "sdfObject": "colour.rgb",
+    "title": "Colour RGB",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_rgb.sdf.json"
+  },
+  {
+    "filename": "sdfobject-colour_saturation.sdf.json",
+    "sdfObject": "colour.saturation",
+    "title": "Colour Saturation",
+    "url": "http://onedm.org/ocf-models/sdfobject-colour_saturation.sdf.json"
+  },
+  {
+    "filename": "sdfobject-consumable.sdf.json",
+    "sdfObject": "consumable",
+    "title": "Consumable",
+    "url": "http://onedm.org/ocf-models/sdfobject-consumable.sdf.json"
+  },
+  {
+    "filename": "sdfobject-conversionfactor.sdf.json",
+    "sdfObject": "conversionfactor",
+    "title": "Conversion Factor",
+    "url": "http://onedm.org/ocf-models/sdfobject-conversionfactor.sdf.json"
+  },
+  {
+    "filename": "sdfobject-cyclingpower.sdf.json",
+    "sdfObject": "cyclingpower",
+    "title": "Cycling Power",
+    "url": "http://onedm.org/ocf-models/sdfobject-cyclingpower.sdf.json"
+  },
+  {
+    "filename": "sdfobject-delaydefrost.sdf.json",
+    "sdfObject": "delaydefrost",
+    "title": "Delay Defrost",
+    "url": "http://onedm.org/ocf-models/sdfobject-delaydefrost.sdf.json"
+  },
+  {
+    "filename": "sdfobject-deodorization.sdf.json",
+    "sdfObject": "deodorization",
+    "title": "Deodorization",
+    "url": "http://onedm.org/ocf-models/sdfobject-deodorization.sdf.json"
+  },
+  {
+    "filename": "sdfobject-door.sdf.json",
+    "sdfObject": "door",
+    "title": "Door",
+    "url": "http://onedm.org/ocf-models/sdfobject-door.sdf.json"
+  },
+  {
+    "filename": "sdfobject-ecomode.sdf.json",
+    "sdfObject": "ecomode",
+    "title": "Eco Mode",
+    "url": "http://onedm.org/ocf-models/sdfobject-ecomode.sdf.json"
+  },
+  {
+    "filename": "sdfobject-energy_battery.sdf.json",
+    "sdfObject": "energy.battery",
+    "title": "Battery",
+    "url": "http://onedm.org/ocf-models/sdfobject-energy_battery.sdf.json"
+  },
+  {
+    "filename": "sdfobject-energy_consumption.sdf.json",
+    "sdfObject": "energy.consumption",
+    "title": "Energy Consumption",
+    "url": "http://onedm.org/ocf-models/sdfobject-energy_consumption.sdf.json"
+  },
+  {
+    "filename": "sdfobject-energy_drlc.sdf.json",
+    "sdfObject": "energy.drlc",
+    "title": "Demand Response Load Control (DRLC).",
+    "url": "http://onedm.org/ocf-models/sdfobject-energy_drlc.sdf.json"
+  },
+  {
+    "filename": "sdfobject-energy_generation.sdf.json",
+    "sdfObject": "energy.generation",
+    "title": "Energy Generation",
+    "url": "http://onedm.org/ocf-models/sdfobject-energy_generation.sdf.json"
+  },
+  {
+    "filename": "sdfobject-energy_overload.sdf.json",
+    "sdfObject": "energy.overload",
+    "title": "Energy Overload/Circuit Breaker",
+    "url": "http://onedm.org/ocf-models/sdfobject-energy_overload.sdf.json"
+  },
+  {
+    "filename": "sdfobject-foaming.sdf.json",
+    "sdfObject": "foaming",
+    "title": "Foaming",
+    "url": "http://onedm.org/ocf-models/sdfobject-foaming.sdf.json"
+  },
+  {
+    "filename": "sdfobject-gas_consumption.sdf.json",
+    "sdfObject": "gas.consumption",
+    "title": "Gas Consumption",
+    "url": "http://onedm.org/ocf-models/sdfobject-gas_consumption.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose.sdf.json",
+    "sdfObject": "glucose",
+    "title": "Glucose",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_carb.sdf.json",
+    "sdfObject": "glucose.carb",
+    "title": "Context Carbohydrates for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_carb.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_exercise.sdf.json",
+    "sdfObject": "glucose.exercise",
+    "title": "Exercise for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_exercise.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_hba1c.sdf.json",
+    "sdfObject": "glucose.hba1c",
+    "title": "Hemoglobin Bound to Glucose A1c Form (HbA1c) for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_hba1c.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_health.sdf.json",
+    "sdfObject": "glucose.health",
+    "title": "Context Health for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_health.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_meal.sdf.json",
+    "sdfObject": "glucose.meal",
+    "title": "Context Meal for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_meal.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_medication.sdf.json",
+    "sdfObject": "glucose.medication",
+    "title": "Context Medication for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_medication.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_samplelocation.sdf.json",
+    "sdfObject": "glucose.samplelocation",
+    "title": "Context Sample Location for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_samplelocation.sdf.json"
+  },
+  {
+    "filename": "sdfobject-glucose_tester.sdf.json",
+    "sdfObject": "glucose.tester",
+    "title": "Context Tester for Glucose Meter",
+    "url": "http://onedm.org/ocf-models/sdfobject-glucose_tester.sdf.json"
+  },
+  {
+    "filename": "sdfobject-grinder.sdf.json",
+    "sdfObject": "grinder",
+    "title": "Grinder",
+    "url": "http://onedm.org/ocf-models/sdfobject-grinder.sdf.json"
+  },
+  {
+    "filename": "sdfobject-heartrate.sdf.json",
+    "sdfObject": "heartrate",
+    "title": "Heart Rate",
+    "url": "http://onedm.org/ocf-models/sdfobject-heartrate.sdf.json"
+  },
+  {
+    "filename": "sdfobject-heatingzone.sdf.json",
+    "sdfObject": "heatingzone",
+    "title": "Heating Zone",
+    "url": "http://onedm.org/ocf-models/sdfobject-heatingzone.sdf.json"
+  },
+  {
+    "filename": "sdfobject-height.sdf.json",
+    "sdfObject": "height",
+    "title": "Height",
+    "url": "http://onedm.org/ocf-models/sdfobject-height.sdf.json"
+  },
+  {
+    "filename": "sdfobject-humidity.sdf.json",
+    "sdfObject": "humidity",
+    "title": "Humidity",
+    "url": "http://onedm.org/ocf-models/sdfobject-humidity.sdf.json"
+  },
+  {
+    "filename": "sdfobject-hvac_capacity.sdf.json",
+    "sdfObject": "hvac.capacity",
+    "title": "HVAC Capacity",
+    "url": "http://onedm.org/ocf-models/sdfobject-hvac_capacity.sdf.json"
+  },
+  {
+    "filename": "sdfobject-iaszoneinfo.sdf.json",
+    "sdfObject": "iaszoneinfo",
+    "title": "IAS Zone Info",
+    "url": "http://onedm.org/ocf-models/sdfobject-iaszoneinfo.sdf.json"
+  },
+  {
+    "filename": "sdfobject-icemaker.sdf.json",
+    "sdfObject": "icemaker",
+    "title": "Ice Maker",
+    "url": "http://onedm.org/ocf-models/sdfobject-icemaker.sdf.json"
+  },
+  {
+    "filename": "sdfobject-impactsensor.sdf.json",
+    "sdfObject": "impactsensor",
+    "title": "Impact Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-impactsensor.sdf.json"
+  },
+  {
+    "filename": "sdfobject-inverter.sdf.json",
+    "sdfObject": "inverter",
+    "title": "Inverter (IEC 61850)",
+    "url": "http://onedm.org/ocf-models/sdfobject-inverter.sdf.json"
+  },
+  {
+    "filename": "sdfobject-keycardswitch.sdf.json",
+    "sdfObject": "keycardswitch",
+    "title": "KeyCard Switch",
+    "url": "http://onedm.org/ocf-models/sdfobject-keycardswitch.sdf.json"
+  },
+  {
+    "filename": "sdfobject-keypadchar.sdf.json",
+    "sdfObject": "keypadchar",
+    "title": "KeyPadChar",
+    "url": "http://onedm.org/ocf-models/sdfobject-keypadchar.sdf.json"
+  },
+  {
+    "filename": "sdfobject-light_brightness.sdf.json",
+    "sdfObject": "light.brightness",
+    "title": "Brightness",
+    "url": "http://onedm.org/ocf-models/sdfobject-light_brightness.sdf.json"
+  },
+  {
+    "filename": "sdfobject-light_dimming.sdf.json",
+    "sdfObject": "light.dimming",
+    "title": "Dimming",
+    "url": "http://onedm.org/ocf-models/sdfobject-light_dimming.sdf.json"
+  },
+  {
+    "filename": "sdfobject-light_ramptime.sdf.json",
+    "sdfObject": "light.ramptime",
+    "title": "Ramp Time",
+    "url": "http://onedm.org/ocf-models/sdfobject-light_ramptime.sdf.json"
+  },
+  {
+    "filename": "sdfobject-liquid_level.sdf.json",
+    "sdfObject": "liquid.level",
+    "title": "Liquid Level",
+    "url": "http://onedm.org/ocf-models/sdfobject-liquid_level.sdf.json"
+  },
+  {
+    "filename": "sdfobject-location_civic.sdf.json",
+    "sdfObject": "location.civic",
+    "title": "Civic Location",
+    "url": "http://onedm.org/ocf-models/sdfobject-location_civic.sdf.json"
+  },
+  {
+    "filename": "sdfobject-lock_code.sdf.json",
+    "sdfObject": "lock.code",
+    "title": "Lock Code",
+    "url": "http://onedm.org/ocf-models/sdfobject-lock_code.sdf.json"
+  },
+  {
+    "filename": "sdfobject-lock_status.sdf.json",
+    "sdfObject": "lock.status",
+    "title": "Lock",
+    "url": "http://onedm.org/ocf-models/sdfobject-lock_status.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media.sdf.json",
+    "sdfObject": "media",
+    "title": "Media",
+    "url": "http://onedm.org/ocf-models/sdfobject-media.sdf.json"
+  },
+  {
+    "filename": "sdfobject-mediasource.sdf.json",
+    "sdfObject": "mediasource",
+    "title": "Media Source",
+    "url": "http://onedm.org/ocf-models/sdfobject-mediasource.sdf.json"
+  },
+  {
+    "filename": "sdfobject-mediasourcelist.sdf.json",
+    "sdfObject": "mediasourcelist",
+    "title": "Media Source List",
+    "url": "http://onedm.org/ocf-models/sdfobject-mediasourcelist.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_audio.sdf.json",
+    "sdfObject": "media.audio",
+    "title": "Media Audio Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_audio.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_core.sdf.json",
+    "sdfObject": "media.core",
+    "title": "Media Core Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_core.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_image.sdf.json",
+    "sdfObject": "media.image",
+    "title": "Media Image Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_image.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_input.sdf.json",
+    "sdfObject": "media.input",
+    "title": "Media Source Input",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_input.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_output.sdf.json",
+    "sdfObject": "media.output",
+    "title": "Media Source Output",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_output.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_text.sdf.json",
+    "sdfObject": "media.text",
+    "title": "Media Text Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_text.sdf.json"
+  },
+  {
+    "filename": "sdfobject-media_video.sdf.json",
+    "sdfObject": "media.video",
+    "title": "Media Video Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-media_video.sdf.json"
+  },
+  {
+    "filename": "sdfobject-mode.sdf.json",
+    "sdfObject": "mode",
+    "title": "Mode",
+    "url": "http://onedm.org/ocf-models/sdfobject-mode.sdf.json"
+  },
+  {
+    "filename": "sdfobject-movement_linear.sdf.json",
+    "sdfObject": "movement.linear",
+    "title": "Movement",
+    "url": "http://onedm.org/ocf-models/sdfobject-movement_linear.sdf.json"
+  },
+  {
+    "filename": "sdfobject-muscleoxygensaturation.sdf.json",
+    "sdfObject": "muscleoxygensaturation",
+    "title": "Muscle Oxygen Saturation",
+    "url": "http://onedm.org/ocf-models/sdfobject-muscleoxygensaturation.sdf.json"
+  },
+  {
+    "filename": "sdfobject-nightmode.sdf.json",
+    "sdfObject": "nightmode",
+    "title": "Night Mode",
+    "url": "http://onedm.org/ocf-models/sdfobject-nightmode.sdf.json"
+  },
+  {
+    "filename": "sdfobject-opaquedata.sdf.json",
+    "sdfObject": "opaquedata",
+    "title": "Opaque Data",
+    "url": "http://onedm.org/ocf-models/sdfobject-opaquedata.sdf.json"
+  },
+  {
+    "filename": "sdfobject-openlevel.sdf.json",
+    "sdfObject": "openlevel",
+    "title": "Open Level",
+    "url": "http://onedm.org/ocf-models/sdfobject-openlevel.sdf.json"
+  },
+  {
+    "filename": "sdfobject-operational_state.sdf.json",
+    "sdfObject": "operational.state",
+    "title": "Operational State",
+    "url": "http://onedm.org/ocf-models/sdfobject-operational_state.sdf.json"
+  },
+  {
+    "filename": "sdfobject-orfid_station.sdf.json",
+    "sdfObject": "orfid.station",
+    "title": "Optical RFID Station",
+    "url": "http://onedm.org/ocf-models/sdfobject-orfid_station.sdf.json"
+  },
+  {
+    "filename": "sdfobject-orfid_tag.sdf.json",
+    "sdfObject": "orfid.tag",
+    "title": "Optical RFID Tag",
+    "url": "http://onedm.org/ocf-models/sdfobject-orfid_tag.sdf.json"
+  },
+  {
+    "filename": "sdfobject-printer_3d.sdf.json",
+    "sdfObject": "printer.3d",
+    "title": "3D Printer",
+    "url": "http://onedm.org/ocf-models/sdfobject-printer_3d.sdf.json"
+  },
+  {
+    "filename": "sdfobject-printer_queue.sdf.json",
+    "sdfObject": "printer.queue",
+    "title": "Print Queue",
+    "url": "http://onedm.org/ocf-models/sdfobject-printer_queue.sdf.json"
+  },
+  {
+    "filename": "sdfobject-ptz.sdf.json",
+    "sdfObject": "ptz",
+    "title": "Pan Tilt Zoom Movement",
+    "url": "http://onedm.org/ocf-models/sdfobject-ptz.sdf.json"
+  },
+  {
+    "filename": "sdfobject-pulsatilecharacteristic.sdf.json",
+    "sdfObject": "pulsatilecharacteristic",
+    "title": "Pulsatile Characteristic for Pulse Oximeter",
+    "url": "http://onedm.org/ocf-models/sdfobject-pulsatilecharacteristic.sdf.json"
+  },
+  {
+    "filename": "sdfobject-pulsatileoccurrence.sdf.json",
+    "sdfObject": "pulsatileoccurrence",
+    "title": "Pulsatile Occurrence for Pulse Oximeter",
+    "url": "http://onedm.org/ocf-models/sdfobject-pulsatileoccurrence.sdf.json"
+  },
+  {
+    "filename": "sdfobject-pulserate.sdf.json",
+    "sdfObject": "pulserate",
+    "title": "Pulse Rate",
+    "url": "http://onedm.org/ocf-models/sdfobject-pulserate.sdf.json"
+  },
+  {
+    "filename": "sdfobject-pvconnectionterminal.sdf.json",
+    "sdfObject": "pvconnectionterminal",
+    "title": "PV array system connection terminal (IEC 61850)",
+    "url": "http://onedm.org/ocf-models/sdfobject-pvconnectionterminal.sdf.json"
+  },
+  {
+    "filename": "sdfobject-remotecontrol.sdf.json",
+    "sdfObject": "remotecontrol",
+    "title": "Remote Control",
+    "url": "http://onedm.org/ocf-models/sdfobject-remotecontrol.sdf.json"
+  },
+  {
+    "filename": "sdfobject-selectablelevels.sdf.json",
+    "sdfObject": "selectablelevels",
+    "title": "Selectable Levels",
+    "url": "http://onedm.org/ocf-models/sdfobject-selectablelevels.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor.sdf.json",
+    "sdfObject": "sensor",
+    "title": "Generic Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_acceleration.sdf.json",
+    "sdfObject": "sensor.acceleration",
+    "title": "Acceleration Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_acceleration.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_activity_count.sdf.json",
+    "sdfObject": "sensor.activity.count",
+    "title": "Activity Count",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_activity_count.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_atmosphericpressure.sdf.json",
+    "sdfObject": "sensor.atmosphericpressure",
+    "title": "Atmospheric Pressure Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_atmosphericpressure.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_carbondioxide.sdf.json",
+    "sdfObject": "sensor.carbondioxide",
+    "title": "Carbon Dioxide Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_carbondioxide.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_carbonmonoxide.sdf.json",
+    "sdfObject": "sensor.carbonmonoxide",
+    "title": "Carbon Monoxide Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_carbonmonoxide.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_contact.sdf.json",
+    "sdfObject": "sensor.contact",
+    "title": "Contact Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_contact.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_geolocation.sdf.json",
+    "sdfObject": "sensor.geolocation",
+    "title": "Geolocation",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_geolocation.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_glassbreak.sdf.json",
+    "sdfObject": "sensor.glassbreak",
+    "title": "Glass Break Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_glassbreak.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_heart_zone.sdf.json",
+    "sdfObject": "sensor.heart.zone",
+    "title": "Heart Rate Zone",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_heart_zone.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_illuminance.sdf.json",
+    "sdfObject": "sensor.illuminance",
+    "title": "Illuminance Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_illuminance.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_magneticfielddirection.sdf.json",
+    "sdfObject": "sensor.magneticfielddirection",
+    "title": "Magnetic Field Direction Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_magneticfielddirection.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_measurement.sdf.json",
+    "sdfObject": "sensor.measurement",
+    "title": "Generic Measurement Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_measurement.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_motion.sdf.json",
+    "sdfObject": "sensor.motion",
+    "title": "Motion Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_motion.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_presence.sdf.json",
+    "sdfObject": "sensor.presence",
+    "title": "Presence Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_presence.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_props.sdf.json",
+    "sdfObject": "sensor.props",
+    "title": "Sensor Properties",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_props.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_radiation_uv.sdf.json",
+    "sdfObject": "sensor.radiation.uv",
+    "title": "UV Radiation",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_radiation_uv.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_radiation_uva.sdf.json",
+    "sdfObject": "sensor.radiation.uva",
+    "title": "UVA Radiation",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_radiation_uva.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_radiation_uvb.sdf.json",
+    "sdfObject": "sensor.radiation.uvb",
+    "title": "UVB Radiation",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_radiation_uvb.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_sleep.sdf.json",
+    "sdfObject": "sensor.sleep",
+    "title": "Sleep Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_sleep.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_smoke.sdf.json",
+    "sdfObject": "sensor.smoke",
+    "title": "Smoke Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_smoke.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_threeaxis.sdf.json",
+    "sdfObject": "sensor.threeaxis",
+    "title": "Three Axis Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_threeaxis.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_touch.sdf.json",
+    "sdfObject": "sensor.touch",
+    "title": "Touch Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_touch.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sensor_water.sdf.json",
+    "sdfObject": "sensor.water",
+    "title": "Water Sensor",
+    "url": "http://onedm.org/ocf-models/sdfobject-sensor_water.sdf.json"
+  },
+  {
+    "filename": "sdfobject-settings_accessibility.sdf.json",
+    "sdfObject": "settings.accessibility",
+    "title": "Device Settings Accessibility Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-settings_accessibility.sdf.json"
+  },
+  {
+    "filename": "sdfobject-settings_broadcasting.sdf.json",
+    "sdfObject": "settings.broadcasting",
+    "title": "Device Settings Broadcasting Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-settings_broadcasting.sdf.json"
+  },
+  {
+    "filename": "sdfobject-settings_picture.sdf.json",
+    "sdfObject": "settings.picture",
+    "title": "Device Settings Picture Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-settings_picture.sdf.json"
+  },
+  {
+    "filename": "sdfobject-settings_sound.sdf.json",
+    "sdfObject": "settings.sound",
+    "title": "Device Settings Sound Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-settings_sound.sdf.json"
+  },
+  {
+    "filename": "sdfobject-settings_support.sdf.json",
+    "sdfObject": "settings.support",
+    "title": "Device Settings Support Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-settings_support.sdf.json"
+  },
+  {
+    "filename": "sdfobject-settings_system.sdf.json",
+    "sdfObject": "settings.system",
+    "title": "Device Settings System Resource Type",
+    "url": "http://onedm.org/ocf-models/sdfobject-settings_system.sdf.json"
+  },
+  {
+    "filename": "sdfobject-signalstrength.sdf.json",
+    "sdfObject": "signalstrength",
+    "title": "Signal Strength",
+    "url": "http://onedm.org/ocf-models/sdfobject-signalstrength.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sleep.sdf.json",
+    "sdfObject": "sleep",
+    "title": "Sleep",
+    "url": "http://onedm.org/ocf-models/sdfobject-sleep.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sound_pressure.sdf.json",
+    "sdfObject": "sound.pressure",
+    "title": "Sound Pressure in Pascal",
+    "url": "http://onedm.org/ocf-models/sdfobject-sound_pressure.sdf.json"
+  },
+  {
+    "filename": "sdfobject-sound_pressurelevel.sdf.json",
+    "sdfObject": "sound.pressurelevel",
+    "title": "Sound Pressure Level in dB",
+    "url": "http://onedm.org/ocf-models/sdfobject-sound_pressurelevel.sdf.json"
+  },
+  {
+    "filename": "sdfobject-speech_tts.sdf.json",
+    "sdfObject": "speech.tts",
+    "title": "Speech Synthesis-TTS",
+    "url": "http://onedm.org/ocf-models/sdfobject-speech_tts.sdf.json"
+  },
+  {
+    "filename": "sdfobject-speed.sdf.json",
+    "sdfObject": "speed",
+    "title": "Speed",
+    "url": "http://onedm.org/ocf-models/sdfobject-speed.sdf.json"
+  },
+  {
+    "filename": "sdfobject-spo2.sdf.json",
+    "sdfObject": "spo2",
+    "title": "SpO2 for Pulse Oximeter",
+    "url": "http://onedm.org/ocf-models/sdfobject-spo2.sdf.json"
+  },
+  {
+    "filename": "sdfobject-switch_binary.sdf.json",
+    "sdfObject": "switch.binary",
+    "title": "Binary Switch",
+    "url": "http://onedm.org/ocf-models/sdfobject-switch_binary.sdf.json"
+  },
+  {
+    "filename": "sdfobject-switch_fault.sdf.json",
+    "sdfObject": "switch.fault",
+    "title": "Fault Interrupter Switch",
+    "url": "http://onedm.org/ocf-models/sdfobject-switch_fault.sdf.json"
+  },
+  {
+    "filename": "sdfobject-temperature.sdf.json",
+    "sdfObject": "temperature",
+    "title": "Temperature",
+    "url": "http://onedm.org/ocf-models/sdfobject-temperature.sdf.json"
+  },
+  {
+    "filename": "sdfobject-time_period.sdf.json",
+    "sdfObject": "time.period",
+    "title": "Time Period",
+    "url": "http://onedm.org/ocf-models/sdfobject-time_period.sdf.json"
+  },
+  {
+    "filename": "sdfobject-time_stamp.sdf.json",
+    "sdfObject": "time.stamp",
+    "title": "Time Stamp",
+    "url": "http://onedm.org/ocf-models/sdfobject-time_stamp.sdf.json"
+  },
+  {
+    "filename": "sdfobject-torque.sdf.json",
+    "sdfObject": "torque",
+    "title": "Torque",
+    "url": "http://onedm.org/ocf-models/sdfobject-torque.sdf.json"
+  },
+  {
+    "filename": "sdfobject-tv_apps.sdf.json",
+    "sdfObject": "tv.apps",
+    "title": "TV Apps",
+    "url": "http://onedm.org/ocf-models/sdfobject-tv_apps.sdf.json"
+  },
+  {
+    "filename": "sdfobject-userid.sdf.json",
+    "sdfObject": "userid",
+    "title": "User ID",
+    "url": "http://onedm.org/ocf-models/sdfobject-userid.sdf.json"
+  },
+  {
+    "filename": "sdfobject-userinfo.sdf.json",
+    "sdfObject": "userinfo",
+    "title": "User Info for Application Layer",
+    "url": "http://onedm.org/ocf-models/sdfobject-userinfo.sdf.json"
+  },
+  {
+    "filename": "sdfobject-vehicle_connector.sdf.json",
+    "sdfObject": "vehicle.connector",
+    "title": "Vehicle Connector",
+    "url": "http://onedm.org/ocf-models/sdfobject-vehicle_connector.sdf.json"
+  },
+  {
+    "filename": "sdfobject-vendorlist.sdf.json",
+    "sdfObject": "vendorlist",
+    "title": "Vendor List",
+    "url": "http://onedm.org/ocf-models/sdfobject-vendorlist.sdf.json"
+  },
+  {
+    "filename": "sdfobject-waterinfo.sdf.json",
+    "sdfObject": "waterinfo",
+    "title": "Water Info",
+    "url": "http://onedm.org/ocf-models/sdfobject-waterinfo.sdf.json"
+  },
+  {
+    "filename": "sdfobject-weight.sdf.json",
+    "sdfObject": "weight",
+    "title": "Weight",
+    "url": "http://onedm.org/ocf-models/sdfobject-weight.sdf.json"
+  },
+  {
+    "filename": "sdfobject-windowcovering.sdf.json",
+    "sdfObject": "windowcovering",
+    "title": "Window Covering",
+    "url": "http://onedm.org/ocf-models/sdfobject-windowcovering.sdf.json"
+  }
+]
